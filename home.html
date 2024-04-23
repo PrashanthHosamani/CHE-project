@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food-resource</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: aquamarine;
+            
+            margin: auto;
+            width: 100%;
+        }
+
+        .right {
+            font-size: x-large;
+            margin: 50px 50px 0 0;
+            padding: auto;
+        }
+
+        .left {
+            color: brown;
+            font-size: 35px;
+            height: 120px;
+            margin: 0px;
+            padding-top: 0px;
+            font-style: italic;
+            
+            
+
+        }
+        .fra{
+            height: 120px;
+            width: 200px;
+            padding-top: 50px;
+            
+        }
+
+        .rec {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 50px;
+           
+        }
+
+        .food {
+            background-image: url("./sustainable-farming.avif");
+            background-size: cover;
+            height: 900px;
+            margin: 0px;
+            padding: auto;
+            background-repeat: no-repeat;
+            background-color: rgb(20, 102, 174);
+            text-align: center;
+
+
+
+        }
+
+        nav {
+            height: 120px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:rgb(187, 207, 244);
+            margin: auto;
+            padding: 10px 10px 50px 10px;
+            border: 1px solid red;
+            position: fixed;
+
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+
+        ul li a {
+            text-decoration:none;
+            color:black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover{
+            color:crimson;
+        }
+        a:active{
+            color: brown;
+        }
+
+        p {
+            text-align: justify;
+            font-size: xxx-large;
+            padding: 120px 0 0 20px;
+            color: black;
+
+        }
+
+        button img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .search {
+            height: 50px;
+            width: 500px;
+
+        }
+
+    
+
+        .f {
+            display: flex;
+            margin-left: 100px;
+            margin-top: 0px;
+            font-style: italic;
+            font-size: 70px;
+            color: rgb(253, 252, 253);
+            
+            
+        }
+
+        .m1 {
+            height: 500px;
+            width: 1300px;
+            display: flex;
+            background-color: rgb(236, 224, 5);
+            margin-left: 30px;
+            margin-right: 80px;
+            margin-top: 50px;
+            border-radius: 30px;
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+        }
+        .m2{
+            height: 500px;
+            width: 1300px;
+            display: flex;
+            background-color: rgb(5, 236, 224);
+            margin-left: 30px;
+            margin-right: 80px;
+            margin-top: 50px;
+            border-radius: 30px;
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+        }
+        .m3{
+            height: 500px;
+            width: 1300px;
+            display: flex;
+            background-color: rgb(232, 5, 236);
+            margin-left: 30px;
+            margin-right: 80px;
+            margin-top: 50px;
+            border-radius: 30px;
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+        }
+        .m4{
+            height: 500px;
+            width: 1300px;
+            display: flex;
+            background-color: rgb(236, 151, 5);
+            margin-left: 30px;
+            margin-right: 80px;
+            margin-top: 50px;
+            border-radius: 30px;
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+        }
+        .m5{
+            height: 500px;
+            width: 1300px;
+            display: flex;
+            background-color: rgb(5, 236, 24);
+            margin-left: 30px;
+            margin-right: 80px;
+            margin-top: 50px;
+            border-radius: 30px;
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+        }
+
+        .menu{
+            height: 470px;
+            width: 500px;
+            margin-top: 15px;
+            
+        }
+        .m{
+            height: 470px;
+            width: 800px;
+            
+            margin-top: 15px;
+        }
+        .m1,.m2,.m3,.m4,.m5:hover{
+            border: 3px solid rgb(225, 0, 255);
+        }
+        
+        .alt {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: aliceblue;
+            padding-bottom: 30px;
+            font-weight: 400;
+            height: 400vh;
+            padding-top: 60px;
+        }
+
+        .indian {
+            height: 450px;
+            width: 500px;
+            margin: auto;
+            padding: 10px 10px 0px 10px;
+            border-radius: 30px;
+        }
+
+        .d {
+            margin-top: 0px;
+            padding-top: 0px;
+            margin-right: 20px;
+            text-align: center;
+            font-size: 40px;
+            font-style: italic;
+        }
+        .mh{
+            font-size: larger;
+            padding: 20px 20px 20px 20px;;
+        }
+
+     
+
+        .head {
+            background-color: aliceblue;
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 100px;
+            height: 20vh;
+            font-size: xxx-large;
+            font-style: italic;
+        }
+
+        .r {
+            height: 500px;
+            width: 350px;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: rgb(255, 220, 249);
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+            border-radius: 30px;
+
+        }
+        .r:hover{
+            border: 3px solid rgb(230, 6, 6);
+        }
+
+        .work {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(221, 245, 245);
+            padding-bottom: 30px;
+            height: 100vh;
+           padding-top: 100px;
+
+        }
+
+        .w {
+            height: 350px;
+            width: 330px;
+            justify-content: center;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 30px;
+
+        }
+
+        .k {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .e {
+            font-size: x-large;
+            margin-left: 0px;
+            padding-top: 10px;
+            padding-left: 10px;
+            text-align: center;
+        }
+
+        .h {
+            background-color: rgb(221, 245, 245);
+            ;
+            text-align: center;
+            padding-top: 90px;
+            padding-bottom: 10px;
+            font-size: xxx-large;
+            height: 20vh;
+        }
+
+        .last{
+            height: 50vh;
+            background-color: rgb(183, 206, 238);
+            display: flex;
+            justify-content: center;
+        }
+        
+        .la{
+            background-color:  rgb(183, 206, 238);
+            height: 250px;
+            width: 300px;
+            margin-left: 40px;
+            margin-right: 80px;
+            margin-top: 100px;
+
+        }
+        
+        .tel{
+            height: 100px;
+            width: 100px;
+            margin-left: 100px;
+        }
+
+        .let{
+            text-align: center;
+            padding-top: 30px;
+        }
+       
+        .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #b7ddf3;}
+
+
+
+.service{
+            height: 180vh;
+            background-color:aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+        }
+        
+        
+
+        .z{
+            height: 290px;
+            width: 560px;
+            background-color: rgb(253, 234, 236);
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            margin-right: 50px;
+            display: flex;
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+        }
+
+        .hc{
+            background-color:aliceblue;
+            padding-top: 80px;
+            padding-left: 150px;
+            font-size: xxx-large;
+        }
+        
+        .b{
+            padding-left: 20px;
+            margin-top:  20px;
+            font-size: x-large;
+            height: 30px;
+            width: 100%;
+            color: rgb(81, 0, 255);
+        }
+        .ser{
+            height: 180px;
+            width: 200px; 
+            padding-top: 10px;
+            padding-left: 10px;
+       
+        }
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/c88ac126d3.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><img class="fra" src="./fra.png" alt="FRA logo"><b>Food Resource and Agriculture</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+
+                    <div class="dropdown">
+                        <li class="dropbtn"><a href="">Farming Techniques</a></li>
+                        <div class="dropdown-content">
+                          <a href="./organic.html">>Organic farming</a>
+                          <a href="chinese.html">>Regenerative Farming</a>
+                          <a href="mexican.html">>Hydroponics</a>
+                          
+                        </div>
+                      </div>
+                  
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./signip.html">Sign up</a></li>
+                    <li><a href="./login.html">Log in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section>
+    <div class="food">
+        <div class="rec">
+        <p class="f"><strong>CREATING A SUSTAINABLE </br>FOOD FUTURE</strong></p>
+        
+    </div>
+    </div>
+    </section>
+
+    <section>
+        <h1 class="h">Farming Techniques</h1>
+        <div class="work">
+        <a href="./organic.html"><div class="r"><img class="w" src="./organic.jpg" alt="Breakfast">
+                <h1 class="k"><b>Organic farming</b></h1>
+               <p class="e"></p>
+            </div>
+        </a>
+        <a href=""><div class="r"><img class="w" src="./Regenerative-Agriculture-.jpg" alt="Lunch">
+                <h1 class="k"><b>Regenerative Farming</b></h1>
+                <p class="e"></p>
+            </div>
+        </a>
+        <a href=""> <div class="r"><img class="w" src="./hydroponic.jpg" alt="Dinner">
+                <h1 class="k"><b>Hydroponics</b></h1>
+                <p class="e"></p>
+            </div>
+        </a>
+        </div>
+        </section>
+
+    <section>
+    <h1 class="head">The Menu for a Sustainable Food Future</h1>
+    <div class="alt">
+        <a href="indian.html" target="_top"><div class="m1"><div class="menu"><img class="indian" src="./m1.jpg" alt="Indian cuisine"></div>
+                <div class="m">
+                <h1 class="d">1. Reduce Growth in Demand for Food and Other Agricultural Products (Synthesis)</h1>
+                <p class="mh">The size of the food challenge—and the associated environmental and economic challenges—depends on the scale of the increase in demand for crops and animal-based foods by midcentury. The food, land, and GHG mitigation gaps are derived from reasonable estimates of business-as-usual growth in demand for crops and livestock. Yet such levels of growth are not inevitable. Course 1 menu items explore ways to reduce this projected growth in socially and economically beneficial ways.</p>
+                </div>
+            </div>
+        </a>
+        <a href="chinese.html"><div class="m2"><div class="menu"><img class="indian" src="./m2.jpg" alt="Chinese Cuisine"></div>
+            <div>
+            <h1 class="d">2. Increase Food Production Without Expanding Agricultural Land (Synthesis)</h1>
+            <p class="mh">
+                In addition to the demand-reduction measures addressed in 1 step, the world must boost the output of food on existing agricultural land. To approach the goal of net-zero expansion of agricultural land, under realistic scenarios, improvements in crop and pasture productivity must exceed historical rates of yield gains.</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="mexican.html"><div class="m3"><div class="menu"><img class="indian" src="./m3.jpg" alt="Mexican Cuisine"></div>
+            <div>
+                <h1 class="d">3. Protect and Restore Natural Ecosystems and Limit Agricultural Land-Shifting (Synthesis)</h1>
+                <p class="mh">This focuses on the land-management efforts that must complement food demand-reduction efforts and productivity gains to avoid the harms of agricultural land expansion. One guiding principle is the need to make land-use decisions that enhance efficiency for all purposes—not just agriculture but also carbon storage and other ecosystem services. Another principle is the need to explicitly link efforts to boost agricultural yield gains with protection of natural lands.</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="italy.html"><div class="m4"><div class="menu"><img class="indian" src="./m4.jpg" alt="Italian Cuisine"></div>
+            <div>
+                <h1 class="d">4. Increase Fish Supply (Synthesis)</h1>
+                <p class="mh">Fish, including finfish and shellfish, provide only small percentages of total global calories and protein, but they contribute 17 percent of animal-based protein, and are particularly important for more than 3 billion people in developing countries. We project fish consumption to rise 58 percent between 2010 and 2050, but the wild fish catch peaked at 94 million tons in the mid-1990s and has since stagnated or perhaps declined. This course proposes ways to improve wild fisheries management and raise the productivity and environmental performance of aquaculture.</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="italy.html"><div class="m5"><div class="menu"><img class="indian" src="./green.jpg" alt="Italian Cuisine"></div>
+            <div>
+                <h1 class="d">5. Reduce Greenhouse Gas Emissions from Agricultural Production (Synthesis)
+                </h1>
+                <p class="mh">Agricultural production emissions arise from livestock farming, application of nitrogen fertilizers, rice cultivation, and energy use. These production processes are traditionally regarded as hard to control. In general, our estimates of mitigation potential in this course are more optimistic than others’, partly because many analyses have not fully captured the opportunities for productivity gains and partly because we factor in promising potential for technological innovations.</p>
+            </div>
+        </div>
+        </a>
+
+    </div>
+    </section>
+
+    
+
+
+   
+
+    <section>
+        <div class="last">
+            <div class="la"><img class="tel" src="./location.png" alt="">
+                <h1 class="let">location</h1>
+            </div>
+            <div class="la"><img class="tel" src="./tel.png" alt="">
+                <h1 class="let">+91 1234567890</h1>
+            </div>
+            <div class="la"><img class="tel" src="./mail.png" alt="">
+                <h1 class="let">mail@gmail.com</h1>
+            </div>
+
+        </div>
+    </section>
+
+ 
+
+</body>
+
+</html>

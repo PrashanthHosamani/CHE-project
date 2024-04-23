@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+       
+        .right {
+            font-size: x-large;
+            margin: 50px 50px 0 0;
+            padding: auto;
+        }
+
+        .left {
+            color: brown;
+            font-size: xxx-large;
+            margin: 50px 0 0 50px;
+            padding: auto;
+            font-style: italic;
+
+        }
+
+        nav {
+            height: 120px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:rgb(187, 207, 244);
+            margin: auto;
+            margin-top: 0px;
+            padding: 10px 10px 50px 10px;
+            border: 1px solid red;
+           
+
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+
+        ul li a {
+            text-decoration:none;
+            color:black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover{
+            color:crimson;
+        }
+        a:active{
+            color: brown;
+        }
+
+
+        .m1{
+            height: 900px;
+            width: 1200px;
+            display: flex;
+            background-color: rgb(5, 132, 236);
+            margin-left: 150px;
+            margin-right: 80px;
+            margin-top: 50px;
+            border-radius: 30px;
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+        }
+
+        .menu{
+            height: 470px;
+            width: 500px;
+            margin-top: 15px;
+            
+        }
+        .indian {
+            height: 850px;
+            width: 650px;
+            margin: auto;
+            padding: 10px 10px 0px 10px;
+            border-radius: 30px;
+        }
+        .d {
+            margin-top: 0px;
+            padding-top: 0px;
+            margin-right: 20px;
+            text-align: center;
+            font-size: 40px;
+            font-style: italic;
+        }
+        .mh{
+            font-size: 30px;
+            padding: 20px 20px 20px 20px;;
+        }
+        .m{
+            height: 470px;
+            width: 500px;
+            
+            margin-top: 15px;
+            margin-left: 180px;
+        }
+
+        
+        .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #b7ddf3;}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left"><b>Food Resource and Agriculture</b></div>
+        <div class="right">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+
+                <div class="dropdown">
+                    <li class="dropbtn">Farming Techniques</li>
+                    <div class="dropdown-content">
+                      <a href="./organic.html">>Organic farming</a>
+                      <a href="">>Regenerative Farming</a>
+                      <a href="">>Hydroponics</a>
+                      
+                    </div>
+                  </div>
+              
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./signip.html">Sign up</a></li>
+                <li><a href="./login.html">Log in</a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <div class="m1">
+            <div class="menu"><img class="indian" src="./about.webp" alt="about us"></div>
+                <div class="m">
+                <h1 class="d">About FRA</h1>
+                <p class="mh">The Food Resource and Agriculture (FRA) is a specialized agency that leads 
+                    international efforts to defeat hunger.</br></br>
+                    Our goal is to achieve food security for all and make sure that people have regular access to enough high-quality 
+                    food to lead active, healthy lives.FRA works in over 130 
+                    countries worldwide.</br></br>
+                    
+                    Join us in creating a world without hunger and poverty.</p>
+                </div>
+        </div>
+    
+</body>
+</html>
